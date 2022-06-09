@@ -18,7 +18,7 @@ package com.example.server2;
  import io.netty.util.CharsetUtil;
 
 public class NettyS {
-    static final int PORT = 3500;
+    static final int PORT = 4500;
 
     public static void main(String[] args) throws Exception {
 
@@ -40,7 +40,6 @@ public class NettyS {
                                     new StringEncoder(CharsetUtil.UTF_8),
                                     new LineBasedFrameDecoder(8192),
                                     new StringDecoder(CharsetUtil.UTF_8),
-                                    new ChunkedWriteHandler(),
                                     new FileServerHandler());
                         }
                     });

@@ -29,7 +29,7 @@ import io.netty.handler.codec.string.StringEncoder;
         }
 
         static final String HOST = "127.0.0.1";
-        static final int PORT = 3500;
+        static final int PORT = 4500;
 
 
         public static void main(String[] args) throws InterruptedException {
